@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+
 .features-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -9,7 +22,7 @@
 .feature-card {
   text-align: left;
   background: #fff;
-  padding: 1rem;
+  padding: 2rem 1rem 2rem;
   position: relative;
 }
 
@@ -62,10 +75,11 @@
 }
 
 .feature-title {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #111;
   margin-bottom: 0.8rem;
+  letter-spacing: -2px;
 }
 
 .feature-text {
@@ -82,6 +96,27 @@
 
 .feature-link:hover {
   text-decoration: underline;
+}
+
+
+.feature-separator {
+  width: 100%;                 /* adjust to how long you want */
+  height: 2px;                /* thickness of line */
+  background: rgba(0, 0, 0, 0.1);  /* subtle gray */
+  margin: 1rem auto;          /* spacing and centering */
+  border-radius: 2px;         /* smooth edges */
+  background: var(--primary-color);
+background: linear-gradient(to right, #8b5cf6, #3b82f6);
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;                         /* stick to the very left */
+  width: 2px;                      /* line thickness */
+  background: rgba(0, 0, 0, 0.1);  /* subtle gray */
 }
 
 
@@ -107,7 +142,7 @@
 
 .decor-top-left {
   top: -15px;
-  left: -15px;
+  left: -12px;
 }
 
 .decor-top-right {

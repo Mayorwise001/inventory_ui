@@ -19,7 +19,7 @@ const FeaturesSection = () => {
       bgClass: "bg-yellow",
       shape: "circle",
       title: "Boost engagement, elevate culture",
-      text: `Workvivo has a proven track record of boosting employee engagement, 
+      text: `Inventory mgt App has a proven track record of boosting employee engagement, 
              helping customers like Mater Private Network build a “collaborative 
              community” that “changed its culture”.`,
       linkText: "Mater Private Network",
@@ -29,7 +29,7 @@ const FeaturesSection = () => {
       img: "inventory 4.jpg",
       bgClass: "bg-orange",
       title: "Unrivaled adoption rates",
-      text: `Employees use Workvivo because they want to, not because they have to, 
+      text: `Employees use Inventory mgt App because they want to, not because they have to, 
              allowing adoption rates to soar over 90% for organizations like Ryanair.`,
       linkText: "adoption rates to soar over 90%",
       linkUrl: "#",
@@ -50,6 +50,7 @@ const FeaturesSection = () => {
     <img src={feature.img} alt={feature.title} className="feature-img" />
   </div>
   <h3 className="feature-title">{feature.title}</h3>
+    <div className="feature-separator"></div>
   <p className="feature-text">
     {feature.text.split(feature.linkText)[0]}
     <a href={feature.linkUrl} className="feature-link">
