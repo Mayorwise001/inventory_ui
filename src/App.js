@@ -1,20 +1,20 @@
 import React from "react";
-import Navbar from "./components/navbar";
-import HeroSection from "./components/hero_section";
-import LogoSlider from "./components/LogoSlider";
-import FeaturesSection from "./components/FeaturesSection";
-import FeatureHighlight from "./components/FeatureHighlight";
+
+import { Routes, Route} from "react-router-dom";
+import LoginForm from "./components/login";
+import Home from "./components/homepage";
+import SignupForm from "./components/signup";
 
 function App(){
 
   return (
 
     <>
-    <Navbar/>
-    <HeroSection/>
-  <LogoSlider/>
-  <FeaturesSection/>
-<FeatureHighlight/>
+      <Routes>
+        <Route path="/login" element={<LoginForm/>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/signup" element={<SignupForm/>} />
+      </Routes>
     </>
   )
 }
